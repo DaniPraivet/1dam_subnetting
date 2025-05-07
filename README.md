@@ -1,6 +1,6 @@
 # 1dam_subnetting
 ## Daniel Rodríguez Pérez
-Subnetting
+Ejercicios de subnetting
 
 ### Crear 4 subredes desde la red 192.168.1.0/24
 Buscar un número elevado a 2 que de 4
@@ -53,7 +53,7 @@ a 10
 32-20 = 12
 2^12 = 4096
 12>8
-12-8 = 4
+12-8 = 4 (al ser superior que 8, omitimos el segundo octeto, trabajaremos en el nivel superior)
 2^4 = 16 -> número mágico
 
 172.16.0.0
@@ -66,3 +66,26 @@ a 10
 172.16.112.0
 172.16.128.0
 172.16.144.0
+
+---------------------------------------------
+
+### ¿Podría crear 300 subredes de 2000 hosts teniendo en cuenta los siguientes datos?
+Red -> 00001010.00000000.00000000.00000000
+Máscara -> 11111111.00000000.00000000.00000000
+
+32-8=24 bits de hosts disponibles
+2^24=16.777.216
+2000≈2048
+16.777.216/2048 ≈ 8000 (8192) subredes para los 2000 hosts, por lo que sí se pueden hacer 300
+
+---------------------------------------------
+
+### ¿Cuántas subredes necesitaría y cuáles serían para tener en cuenta los siguientes requisitos?
+IP -> 172.16.0.0/23
+Máscara -> 255.255.254.0
+
+200 hosts en 1 red
+100 hosts en 1 red
+50 hosts en 1 red
+25 hosts en 1 red
+10 hosts en 1 red
