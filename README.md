@@ -152,8 +152,17 @@ Calcula:
 a) La Máscara de Subred
 b) la dirección de BROADCAST para la primera subred útil.
 
-192.223.50.0 -> `255.255.255.128`
+192.223.50.0 -> `255.255.255.0`
 
-Dirección de BROADCAST -> `192.223.50.127`
+Añadimos un bit extra para tener 2 redes, de las cuáles usaremos solo 1.
+
+/24+1 = /25 => 255.255.255.128
+
+- 192.223.50.0/25
+- 192.223.50.128/25
+
+a) `255.255.255.128`
+
+b) `192.223.50.127`
 
 
