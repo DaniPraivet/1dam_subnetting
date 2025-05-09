@@ -141,3 +141,19 @@ Máscara -> 255.255.0.0
 64 - 2 = 62 hosts útiles
 
 La máscara de subred es `255.255.255.192`
+
+
+---------------------------------------------
+
+### Dada la RED: 195.223.50.0, se necesita 1 subred útil.
+
+Calcula:
+
+a) La Máscara de Subred
+b) la dirección de BROADCAST para la primera subred útil.
+
+192.223.50.0 -> `255.255.255.128`
+
+Dirección de BROADCAST -> `192.223.50.127`
+
+
