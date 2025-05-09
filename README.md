@@ -104,3 +104,19 @@ Máscara -> 255.255.254.0
 - 172.16.1.128/26
 - 172.16.1.192/27
 - 172.16.1.224/28
+
+### Dada la RED: 192.10.10.0/24, se necesitan 14 subredes y 14 hosts útiles por subred. ¿Cuál es la Máscara de Subred?
+IP -> 192.10.10.0
+Máscara -> 255.255.255.0
+
+2^x>=14 subredes
+
+2^4=16 subredes
+
+/24+4=/28
+
+/28 => 32-28 = 6 => 2^4 = 16 hosts por subred
+
+16 - 2 = 14 hosts útiles
+
+La máscara de subred es `255.255.255.240`
