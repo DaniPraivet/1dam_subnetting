@@ -200,3 +200,20 @@ Calculamos
 - ¿Cuál sería un ejemplo de IP que podrías asignar a un host de la subred 1?<br>
 `192.168.168.1/27`
 
+
+---------------------------------------------
+
+### Su red utiliza la dirección IP 172.30.0.0/16. Inicialmente existen 25 subredes con un conjunto mínimo de 1000 hosts por subred. Se prevé un crecimiento en los próximos años de 55 subredes. ¿Qué máscara de subred se denerrá utilizar?
+
+- 255.255.240.0
+- 255.255.248.0
+- 255.255.252.0
+- 255.255.254.0
+- 255.255.255.0
+
+  25 subredes + 55 futuras = 80<br>
+  80 ≈ 2^x<br>
+  2^7 ≈ 80 => 128<br>
+  /16+7=/23<br>
+  /23 => `255.255.254.0`
+  
