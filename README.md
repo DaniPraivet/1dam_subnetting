@@ -5,9 +5,9 @@ Ejercicios de subnetting
 ### Crear 4 subredes desde la red 192.168.1.0/24
 Buscar un número elevado a 2 que de 4
 
-2^2=4 /24+2 = /26
-/32 -> límite de máscara
-/32-/26 = 6
+2^2=4 /24+2 = /26 <br>
+/32 -> límite de máscara <br>
+/32-/26 = 6 <br>
 
 2^6= 64 número mágico
 
@@ -20,12 +20,12 @@ Buscar un número elevado a 2 que de 4
 ---------------------------------------------
 
 ### Crear 8 subredes desde la red 192.168.1.0/24
-Buscar un número elevado a 2 que de 8
-2^3=8 -> /24+3 = /27
+Buscar un número elevado a 2 que de 8 <br>
+2^3=8 -> /24+3 = /27 <br>
 
 
-/32-/27 = 5
-2^5=32
+/32-/27 = 5 <br>
+2^5=32 <br>
 
 - 192.168.1.0/27
 - 192.168.1.32/27
@@ -39,27 +39,27 @@ Buscar un número elevado a 2 que de 8
 ---------------------------------------------
 
 ### Crea 10 subredes del mismo tamaño teniendo en cuenta las siguientes representaciones:
-Red -> 10101100.00010000.00000000.00000000
+Red -> 10101100.00010000.00000000.00000000 <br>
 Máscara-> 11111111.11111111.00000000.00000000
 
-Red -> 172.16.0.0
-Máscara-> 255.255.0.0
-Buscar un número elevado a 2 mayor o igual
-a 10
-2^3 = 8
-2^4 = 16 -> usaremos 10
+Red -> 172.16.0.0 <br>
+Máscara-> 255.255.0.0 <br>
+Buscar un número elevado a 2 mayor o igual <br>
+a 10 <br>
+2^3 = 8 <br>
+2^4 = 16 -> usaremos 10 <br>
 
-/16+4 -> /20
+/16+4 -> /20 <br>
 
-32-20 = 12
+32-20 = 12 <br>
 
-2^12 = 4096
+2^12 = 4096 <br>
 
-12>8
+12>8 <br>
 
-12-8 = 4 (al ser superior que 8, omitimos el segundo octeto, trabajaremos en el nivel superior)
+12-8 = 4 (al ser superior que 8, omitimos el segundo octeto, trabajaremos en el nivel superior) <br>
 
-2^4 = 16 -> número mágico
+2^4 = 16 -> número mágico <br>
 
 - 172.16.0.0
 - 172.16.16.0
@@ -165,4 +165,38 @@ a) `255.255.255.128`
 
 b) `192.223.50.127`
 
+
+---------------------------------------------
+
+### ¿Cuál de las siguientes subredes no pertenece a la misma red si se ha utilizado la máscara de subred 255.255.224.0?
+
+- 172.16.66.24
+- 172.16.65.24
+- 172.16.64.42
+- 172.16.63.51
+
+Calculamos
+
+
+---------------------------------------------
+
+### Teniendo en cuenta que la dirección de red es 192.168.168.0/24
+- ¿Cuántas subredes puedo tener con 3 bits? <br>
+2^3(nº de bits) = 8 subredes
+- ¿Cuántos equipos puede tener cada subred?
+2^(32-(24+3))=> 2^5 = 32 <br>
+32 equipos por cada subred
+- ¿Cuáles son sus direcciones de red?
+  - 192.168.168.0
+  - 192.168.168.32
+  - 192.168.168.64
+  - 192.168.168.96
+  - 192.168.168.128
+  - 192.168.168.160
+  - 192.168.168.192
+  - 192.168.168.224
+- ¿Cuál es la dirección de broadcast de la subred 3?<br>
+`192.168.168.95`
+- ¿Cuál sería un ejemplo de IP que podrías asignar a un host de la subred 1?<br>
+`192.168.168.1`
 
