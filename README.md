@@ -183,7 +183,7 @@ Calculamos
 ### Teniendo en cuenta que la dirección de red es 192.168.168.0/24
 - ¿Cuántas subredes puedo tener con 3 bits? <br>
 2^3(nº de bits) = 8 subredes
-- ¿Cuántos equipos puede tener cada subred?
+- ¿Cuántos equipos puede tener cada subred? <br>
 2^(32-(24+3))=> 2^5 = 32 <br>
 32 equipos por cada subred
 - ¿Cuáles son sus direcciones de red?
