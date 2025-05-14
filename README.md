@@ -196,7 +196,7 @@ Calculamos
   - 192.168.168.192
   - 192.168.168.224
 - ¿Cuál es la dirección de broadcast de la subred 3?<br>
-`192.168.168.95`
+`192.168.168.95/27`
 - ¿Cuál sería un ejemplo de IP que podrías asignar a un host de la subred 1?<br>
-`192.168.168.1`
+`192.168.168.1/27`
 
